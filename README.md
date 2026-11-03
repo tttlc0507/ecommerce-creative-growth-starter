@@ -1,6 +1,6 @@
 # 电商创意增长助手
 
-[English](README.en.md) · v0.2.1 · MIT
+[English](README.en.md) · v0.2.2 · MIT
 
 **用单品资料和表现数据，把运营的问题变成设计任务，再把测试结果变成下一轮动作。**
 
@@ -67,13 +67,7 @@ python3 scripts/metrics.py examples/demo-metrics.csv
 
 脚本本地逐行计算，不自动分组、不选赢家、不作显著性或因果分析。[数据字段与复盘说明](skills/ecommerce-creative-growth-starter/references/data-review.md)
 
-## 虚构示例
-
-![原创虚构商品图](examples/demo-creative.svg)
-
-商品、价格与数字都是独立构造的演示，不是客户案例或效果证明。
-
-[商品资料](examples/demo-product.md) · [修改与测试卡](examples/demo-review.md) · [数据复盘与下一轮](examples/demo-cycle.md)
+可从 [CSV 空模板](skills/ecommerce-creative-growth-starter/assets/metrics-template.csv) 整理自己的数据。[字段与计算示例](examples/metrics-walkthrough.md) 使用合成数字解释工具输出，不作为设计案例或效果证明。
 
 ## 边界与反馈
 

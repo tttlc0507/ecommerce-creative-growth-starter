@@ -1,6 +1,6 @@
 # Ecommerce Creative Growth
 
-[中文](README.md) · v0.2.1 · MIT
+[中文](README.md) · v0.2.2 · MIT
 
 Connect product facts and performance data to creative briefs, artwork reviews, test plans and the next iteration. For ecommerce operations and design teams using an AI assistant that supports `SKILL.md`.
 
@@ -34,7 +34,7 @@ python3 scripts/metrics.py examples/demo-metrics.csv
 
 Calculates descriptive CTR, CPC and optional explicitly defined conversion metrics. A column called CVR alone is insufficient. See [fields and interpretation](skills/ecommerce-creative-growth-starter/references/data-review.md). No aggregation, winner selection or causal analysis.
 
-[Examples](examples/demo-cycle.md) are fictional, not customer evidence or measured product benefits. No performance lifts are promised.
+The [metrics example](examples/metrics-walkthrough.md) uses synthetic numbers to explain output fields. It is not a design showcase, customer case or measured product benefit. No performance lifts are promised.
 
 ## Feedback and privacy
 

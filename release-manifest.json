@@ -1,5 +1,5 @@
 {
-  "version": "0.2.1",
+  "version": "0.2.2",
   "files": [
     ".github/ISSUE_TEMPLATE/bug.yml",
     ".github/ISSUE_TEMPLATE/config.yml",
@@ -11,11 +11,8 @@
     "LICENSE",
     "README.en.md",
     "README.md",
-    "examples/demo-creative.svg",
-    "examples/demo-cycle.md",
     "examples/demo-metrics.csv",
-    "examples/demo-product.md",
-    "examples/demo-review.md",
+    "examples/metrics-walkthrough.md",
     "release-manifest.json",
     "scripts/check_release.py",
     "scripts/metrics.py",
