@@ -1,0 +1,29 @@
+{
+  "version": "0.1.0",
+  "files": [
+    ".github/ISSUE_TEMPLATE/bug.yml",
+    ".github/ISSUE_TEMPLATE/config.yml",
+    ".github/ISSUE_TEMPLATE/trial-feedback.yml",
+    ".github/workflows/checks.yml",
+    ".gitignore",
+    "AGENTS.md",
+    "CONTRIBUTING.md",
+    "LICENSE",
+    "README.en.md",
+    "README.md",
+    "examples/demo-creative.svg",
+    "examples/demo-metrics.csv",
+    "examples/demo-product.md",
+    "examples/demo-review.md",
+    "release-manifest.json",
+    "scripts/check_release.py",
+    "scripts/metrics.py",
+    "skills/ecommerce-creative-review/SKILL.md",
+    "skills/ecommerce-creative-review/agents/openai.yaml",
+    "skills/ecommerce-creative-review/assets/intake.md",
+    "skills/ecommerce-creative-review/assets/review-and-test.md",
+    "skills/ecommerce-creative-review/references/visible-review.md",
+    "tests/test_metrics.py",
+    "tests/test_release.py"
+  ]
+}

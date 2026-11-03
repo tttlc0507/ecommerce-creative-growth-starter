@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="760" viewBox="0 0 960 760" role="img" aria-labelledby="title desc">
+  <title id="title">虚构桌面收纳盒演示图</title>
+  <desc id="desc">两只桌面收纳盒，配有桌面更整齐、收纳更轻松、两只装、每只39元起和赠标签贴文字。用于演示审查，不是真实商品。</desc>
+  <rect width="960" height="760" fill="#f1eee5"/>
+  <rect x="40" y="36" width="104" height="36" rx="6" fill="#294d45"/>
+  <text x="58" y="61" font-size="23" font-family="sans-serif" fill="white">DEMO</text>
+  <text x="40" y="134" font-family="sans-serif" font-size="47" font-weight="700" fill="#203f38">桌面更整齐</text>
+  <text x="398" y="166" font-family="sans-serif" font-size="43" font-weight="700" fill="#65875a">收纳更轻松</text>
+  <text x="43" y="190" font-family="sans-serif" font-size="23" fill="#52615a">桌面收纳盒 · 两只装</text>
+  <ellipse cx="485" cy="526" rx="355" ry="42" fill="#d6d4c6"/>
+  <rect x="146" y="309" width="330" height="206" rx="23" fill="#7ea594" stroke="#496f60" stroke-width="3"/>
+  <rect x="134" y="291" width="354" height="43" rx="12" fill="#527d6b"/>
+  <rect x="262" y="370" width="98" height="53" rx="8" fill="#e4e9d7"/>
+  <text x="282" y="406" font-family="sans-serif" font-size="24" fill="#355748">1.2L</text>
+  <rect x="463" y="380" width="313" height="172" rx="23" fill="#cfad7f" stroke="#9e815a" stroke-width="3"/>
+  <rect x="452" y="363" width="336" height="39" rx="12" fill="#ad8d63"/>
+  <rect x="566" y="427" width="102" height="50" rx="8" fill="#f2e7d4"/>
+  <text x="586" y="462" font-family="sans-serif" font-size="24" fill="#785b37">1.2L</text>
+  <rect x="640" y="218" width="266" height="111" rx="16" fill="#e9c855" transform="rotate(-7 773 274)"/>
+  <text x="667" y="259" font-family="sans-serif" font-size="24" fill="#433811">附标签贴</text>
+  <text x="662" y="305" font-family="sans-serif" font-size="40" font-weight="700" fill="#433811">39元起 / 只</text>
+  <line x1="42" y1="600" x2="918" y2="600" stroke="#bcbfae"/>
+  <text x="42" y="644" font-family="sans-serif" font-size="23" fill="#3f554b">带盖方形盒 · 文具收纳</text>
+  <text x="42" y="694" font-family="sans-serif" font-size="20" fill="#6c7466">虚构演示 · 非真实商品、客户案例或测试结果</text>
+</svg>
