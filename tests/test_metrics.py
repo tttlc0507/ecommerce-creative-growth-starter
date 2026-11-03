@@ -5,7 +5,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-SCRIPT = Path(__file__).resolve().parents[1] / "scripts/metrics.py"
+SCRIPT = Path(__file__).resolve().parents[1] / "skills/ecommerce-creative-growth-starter/scripts/metrics.py"
 spec = importlib.util.spec_from_file_location("public_metrics", SCRIPT)
 module = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(module)
@@ -67,6 +67,35 @@ class MetricsBehavior(unittest.TestCase):
     def test_empty_template_has_no_fabricated_rows(self):
         report = self.run_csv("creative_id,impressions,clicks,spend\n")
         self.assertEqual(report["rows"], [])
+
+    def test_conversion_requires_explicit_event_definitions(self):
+        row = self.run_csv("creative_id,impressions,clicks,spend,conversions,conversion_base_count\nfictional,100,10,30,3,60\n")["rows"][0]
+        self.assertIsNone(row["conversion_rate_pct"])
+        self.assertIsNone(row["cost_per_conversion"])
+        self.assertTrue(row["notes"])
+
+    def test_conversion_ratio_and_cost_preserve_context(self):
+        row = self.run_csv("creative_id,impressions,clicks,spend,conversion_event,conversions,conversion_base_event,conversion_base_count,period,attribution_window\nfictional,100,10,30,add_to_cart_users,3,visitors,60,demo_period,demo_window\n")["rows"][0]
+        self.assertEqual(row["conversion_rate_pct"], 5)
+        self.assertEqual(row["cost_per_conversion"], 10)
+        self.assertEqual(row["conversion_event"], "add_to_cart_users")
+        self.assertEqual(row["conversion_base_event"], "visitors")
+        self.assertEqual(row["context"]["attribution_window"], "demo_window")
+
+    def test_zero_conversions_are_zero_rate_and_undefined_cost(self):
+        row = self.run_csv("creative_id,impressions,clicks,spend,conversion_event,conversions,conversion_base_event,conversion_base_count\nfictional,100,10,30,paid_buyers,0,visitors,60\n")["rows"][0]
+        self.assertEqual(row["conversion_rate_pct"], 0)
+        self.assertIsNone(row["cost_per_conversion"])
+
+    def test_conversion_counts_must_be_finite_integers(self):
+        for raw in ("NaN", "3.5", "-1"):
+            with self.subTest(raw=raw), self.assertRaises(ValueError):
+                self.run_csv(f"creative_id,impressions,clicks,spend,conversions\nfictional,100,10,30,{raw}\n")
+
+    def test_conversion_chinese_headers_and_inconsistent_units(self):
+        row = self.run_csv("素材ID,曝光,点击,花费,转化事件,转化数,分母事件,分母计数\n虚构,100,10,30,orders,12,visitors,6\n")["rows"][0]
+        self.assertEqual(row["conversion_rate_pct"], 200)
+        self.assertTrue(row["notes"])
 
     def test_cli_preserves_existing_file(self):
         with tempfile.TemporaryDirectory() as temp:

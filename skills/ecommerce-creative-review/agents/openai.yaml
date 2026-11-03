@@ -1,4 +1,0 @@
-interface:
-  display_name: "电商主图审查"
-  short_description: "审查商品图片的文案、视觉与购买信息，给出可执行修改动作和简版测试卡"
-  default_prompt: "使用 $ecommerce-creative-review 审查我的商品图片，给出优先修改动作和简版测试卡。"

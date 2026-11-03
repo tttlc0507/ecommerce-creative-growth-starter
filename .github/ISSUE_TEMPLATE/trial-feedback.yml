@@ -1,5 +1,5 @@
 name: 试用反馈 / Trial feedback
-description: 告诉我们建议是否具体、可执行，以及哪一步最费力。
+description: 反馈单品诊断、图文任务、审稿、测试或数据复盘能否落地。
 title: "[试用反馈] "
 body:
   - type: markdown
@@ -26,9 +26,20 @@ body:
     validations:
       required: true
   - type: dropdown
+    id: stage
+    attributes:
+      label: 你主要试了哪一步？
+      options:
+        - 数据诊断／复盘
+        - 产品资料／必要调研
+        - 卖点与图文任务
+        - 主图／详情／投放图审查
+        - 测试计划／下一轮记录
+        - 多个阶段
+  - type: dropdown
     id: actionable
     attributes:
-      label: 修改建议能否直接执行？
+      label: 本轮交付能否直接使用？
       options:
         - 可以执行，已采用部分建议
         - 大体能懂，但还需补充说明

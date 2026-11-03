@@ -1,3 +1,3 @@
-creative_id,impressions,clicks,spend
-fictional-a,3000,90,135
-fictional-b,3000,108,162
+creative_id,impressions,clicks,spend,conversion_event,conversions,conversion_base_event,conversion_base_count,channel,placement,audience,period,attribution_window
+fictional-a,3000,90,135,paid_buyers,5,visitors,75,fictional_channel,fictional_placement,fictional_audience,fictional_period,fictional_window
+fictional-b,3000,108,162,paid_buyers,4,visitors,90,fictional_channel,fictional_placement,fictional_audience,fictional_period,fictional_window
