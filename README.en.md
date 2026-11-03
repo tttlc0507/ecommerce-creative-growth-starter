@@ -1,6 +1,6 @@
-# Ecommerce Creative Growth · Starter
+# Ecommerce Creative Growth
 
-[中文](README.md) · v0.2.0 · MIT
+[中文](README.md) · v0.2.1 · MIT
 
 Connect product facts and performance data to creative briefs, artwork reviews, test plans and the next iteration. For ecommerce operations and design teams using an AI assistant that supports `SKILL.md`.
 

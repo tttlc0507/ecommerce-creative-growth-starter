@@ -1,4 +1,4 @@
 interface:
-  display_name: "电商创意增长助手 · 基础版"
+  display_name: "电商创意增长助手"
   short_description: "串联单品数据诊断、卖点图文任务、素材审查与测试复盘，协助运营和设计迭代"
   default_prompt: "使用 $ecommerce-creative-growth-starter 处理我的单品项目，结合资料、素材和数据给本轮交付与下一步。"

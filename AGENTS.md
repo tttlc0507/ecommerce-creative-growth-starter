@@ -1,6 +1,6 @@
 # Repository work
 
-Read README.md and the requested files before editing. Keep this a basic workflow connecting ecommerce operations and design: research inputs, creative briefs, image reviews, test plans, descriptive data review and conditional learning. Preserve actual-image inspection and separation of observations, supplied facts and hypotheses.
+Read README.md and the requested files before editing. Keep this a workflow connecting ecommerce operations and design: research inputs, creative briefs, image reviews, test plans, descriptive data review and conditional learning. Preserve actual-image inspection and separation of observations, supplied facts and hypotheses.
 
 Use fictional, independently constructed examples. Never add customer files, account exports, credentials or machine-specific paths. Do not add analytics or external uploads to this package.
 
